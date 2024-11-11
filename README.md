@@ -95,7 +95,7 @@ Next, from the command prompt, ping a website on the internet (such as www.googl
 ### Network Diagram
 ![topology](images/topology.png)
 ### Problems
-**Virtual Wire**
+**Virtual Wire**<br>
 By default, *ethernet1/1* and *ethernet1/2* are connected by a virtual wire, which causes the ports to act as a direct connection to each other and lose their ability to route and switch traffic.<br>
 Originally, we ran into an error with our commit, as while the interfaces had been changed to Layer 3 and Layer 2 respectively, the firewall still had an unbound virtual wire.<br>
 This error was fixed by going to the *Virtual Wires* section of the *Network* tab, selecting *default-vwire*, and clicking *Delete*, as shown in the Lab Commands section above.
